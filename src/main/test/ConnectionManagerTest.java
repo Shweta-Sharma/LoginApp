@@ -31,9 +31,4 @@ public class ConnectionManagerTest {
 		assertTrue(true);
 	}
 	
-	@Test
-	public void testEx2() {
-		assertTrue(dao.TestCase("Radhika", "Radhika@123"));
-	}
-
 }
