@@ -46,11 +46,39 @@
 		<archive>
 			<manifestEntries>
 				<Specification-Title>${project.name}</Specification-Title>
-				<Specification-Version>${project.version}</Specification-Version>
-				<Implementation-Version>${build.number}</Implementation-Version>
 			</manifestEntries>
 		</archive>
 		</configuration>
+	</plugin>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-antrun-plugin</artifactId>
+		<version>1.7</version>
+		<executions>
+			<execution>
+				<phase>validate</phase>
+				<goals>
+					<goal>run</goal>
+				</goals>
+				<configuration>
+					<tasks>
+						<echo>Displaying value of pom.xml element</echo>
+						<echo>Job url : ${JOB_URL}</echo>
+						<echo message="${env.BUILD_TAG}"/>
+						<echo message="${env.BUILD_ID}"/>
+						<echo message="${env.EXECUTOR_NUMBER}"/>
+						<echo message="${env.NODE_NAME}"/>
+						<echo message="${env.NODE_LABELS}"/>
+						<echo message="${env.JAVA_HOME}"/>
+						<echo message="${env.WORKSPACE}"/>
+						<echo message="${env.HUDSON_URL}"/>
+						<echo message="${env.JOB_URL}"/>
+						<echo message="${env.BUILD_URL}"/>
+						<echo message="${env.SVN_REVISION}"/>
+					</tasks>
+				</configuration>
+			</execution>
+		</executions>
 	</plugin>
 	</plugins> 
   </build>
