@@ -72,9 +72,6 @@
 						<echo message="${env.JAVA_HOME}"/>
 						<echo message="${env.WORKSPACE}"/>
 						<echo message="${env.HUDSON_URL}"/>
-						<echo message="${env.JOB_URL}"/>
-						<echo message="${env.BUILD_URL}"/>
-						<echo message="${env.SVN_REVISION}"/>
 					</tasks>
 				</configuration>
 			</execution>
