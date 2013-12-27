@@ -69,7 +69,6 @@
 						<echo message="${env.EXECUTOR_NUMBER}"/>
 						<echo message="${env.NODE_NAME}"/>
 						<echo message="${env.NODE_LABELS}"/>
-						<echo message="${env.JAVA_HOME}"/>
 						<echo message="${env.WORKSPACE}"/>
 						<echo message="${env.HUDSON_URL}"/>
 					</tasks>
