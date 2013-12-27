@@ -65,7 +65,6 @@
 						<echo>Displaying value of pom.xml element</echo>
 						<echo>Job url : ${JOB_URL}</echo>
 						<echo message="${env.BUILD_TAG}"/>
-						<echo message="${env.BUILD_ID}"/>
 						<echo message="${env.EXECUTOR_NUMBER}"/>
 						<echo message="${env.NODE_NAME}"/>
 						<echo message="${env.NODE_LABELS}"/>
