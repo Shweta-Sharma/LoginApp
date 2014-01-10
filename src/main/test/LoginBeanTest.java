@@ -30,7 +30,7 @@ public class LoginBeanTest {
 
 	@Test
 	public void testGetFirstName() {
-		assertEquals("Shweta", "Shweta");
+		assertEquals("Shweta", "Shweta"); 
 	}
 
 //	@Test
