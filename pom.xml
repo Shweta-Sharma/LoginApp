@@ -70,6 +70,8 @@
 						<echo message="${env.NODE_LABELS}"/>
 						<echo message="${env.WORKSPACE}"/>
 						<echo message="${env.HUDSON_URL}"/>
+						<echo message="${env.JOB_URL}"/>
+						<echo message="${env.BUILD_URL}"/>
 					</tasks>
 				</configuration>
 			</execution>
