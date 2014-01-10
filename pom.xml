@@ -72,6 +72,7 @@
 						<echo message="${env.HUDSON_URL}"/>
 						<echo message="${env.JOB_URL}"/>
 						<echo message="${env.BUILD_URL}"/>
+						<echo message="${env.JAVA_HOME}"/>
 					</tasks>
 				</configuration>
 			</execution>
